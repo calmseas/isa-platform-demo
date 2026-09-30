@@ -1,0 +1,15 @@
+{
+  "name": "isa-demo-marketplace",
+  "owner": "Frontier Practice Advisory",
+  "metadata": {
+    "description": "Training marketplace for the Advanced Claude Code session.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "isa-tools",
+      "source": "./plugins/isa-tools",
+      "description": "House conventions and reviews for the ISA platform demo."
+    }
+  ]
+}
