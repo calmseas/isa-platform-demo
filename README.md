@@ -10,9 +10,9 @@ contributions and transfers, built to exercise the techniques in the deck.
 ## Quick start
 
 ```bash
-make install     # fastapi, pytest, uvicorn, ruff, black
-make test        # one test fails on purpose — see PRESENTER.md
-make run         # http://localhost:8000/docs
+uv sync                                 # fastapi, uvicorn + dev tools (pytest, ruff, black, httpx)
+uv run pytest                           # one test fails on purpose — see PRESENTER.md
+uv run uvicorn app.main:app --reload    # http://localhost:8000/docs
 ```
 
 ## Layout

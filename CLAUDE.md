@@ -3,9 +3,11 @@
 FastAPI service for ISA accounts, contributions and transfers. Training material.
 
 ## Commands
-- Install: `make install`
-- Test: `make test` (pytest)
-- Run: `make run` (uvicorn on :8000)
+- Install: `uv sync`
+- Test: `uv run pytest`
+- Run: `uv run uvicorn app.main:app --reload` (uvicorn on :8000)
+- Format: `uv run ruff check --fix . && uv run black .`
+- Scan for hidden Unicode: `uv run python security/scan_invisible.py $(git ls-files '*.md' '**/SKILL.md')`
 
 ## Conventions
 - Routes live in `app/routes/<resource>.py`, one router per resource, registered in `app/main.py`.

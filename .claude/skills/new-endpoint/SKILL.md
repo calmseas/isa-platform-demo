@@ -21,4 +21,4 @@ Follow these conventions for every new route in this repo:
 7. **Tests**: add a `tests/test_<resource>.py` covering the happy path, the auth
    failure, and one rule violation. Use the `client` and `admin_headers` fixtures.
 
-Run `make test` before you finish and show the output.
+Run `uv run pytest` before you finish and show the output.

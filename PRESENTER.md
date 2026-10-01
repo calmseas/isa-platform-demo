@@ -5,7 +5,7 @@ planted faults.
 
 ## Before the session
 
-- `make install`, then `make test` once to confirm the environment (you'll see one
+- `uv sync`, then `uv run pytest` once to confirm the environment (you'll see one
   failing test — that's intentional, see below).
 - Pin the Claude Code version you rehearsed on.
 - Present in **Manual** permission mode so the approval choices are visible.
@@ -27,7 +27,7 @@ planted faults.
 | Missing cash sub-limit | `app/isa_rules.py` (only overall allowance enforced) | spec-driven capstone |
 | Bloated CLAUDE.md | copy `examples/CLAUDE.bloated.md` over `CLAUDE.md` | skills demo |
 
-`make test` shows **1 failed** (`tests/test_fees.py`) and the rest green.
+`uv run pytest` shows **1 failed** (`tests/test_fees.py`) and the rest green.
 
 ## Run-sheet
 

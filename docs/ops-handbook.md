@@ -15,7 +15,7 @@ Steps:
 1. Check the deployment dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 1.2 Deployment — topic 2
@@ -24,7 +24,7 @@ Steps:
 1. Check the deployment dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 1.3 Deployment — topic 3
@@ -33,7 +33,7 @@ Steps:
 1. Check the deployment dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 1.4 Deployment — topic 4
@@ -42,7 +42,7 @@ Steps:
 1. Check the deployment dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 1.5 Deployment — topic 5
@@ -51,7 +51,7 @@ Steps:
 1. Check the deployment dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 1.6 Deployment — topic 6
@@ -60,7 +60,7 @@ Steps:
 1. Check the deployment dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 2. Contributions service
@@ -73,7 +73,7 @@ Steps:
 1. Check the contributions service dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 2.2 Contributions service — topic 2
@@ -82,7 +82,7 @@ Steps:
 1. Check the contributions service dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 2.3 Contributions service — topic 3
@@ -91,7 +91,7 @@ Steps:
 1. Check the contributions service dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 2.4 Contributions service — topic 4
@@ -100,7 +100,7 @@ Steps:
 1. Check the contributions service dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 2.5 Contributions service — topic 5
@@ -109,7 +109,7 @@ Steps:
 1. Check the contributions service dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 2.6 Contributions service — topic 6
@@ -118,7 +118,7 @@ Steps:
 1. Check the contributions service dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 3. Allowance engine
@@ -131,7 +131,7 @@ Steps:
 1. Check the allowance engine dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 3.2 Allowance engine — topic 2
@@ -140,7 +140,7 @@ Steps:
 1. Check the allowance engine dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 3.3 Allowance engine — topic 3
@@ -149,7 +149,7 @@ Steps:
 1. Check the allowance engine dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 3.4 Allowance engine — topic 4
@@ -158,7 +158,7 @@ Steps:
 1. Check the allowance engine dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 3.5 Allowance engine — topic 5
@@ -167,7 +167,7 @@ Steps:
 1. Check the allowance engine dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 3.6 Allowance engine — topic 6
@@ -176,7 +176,7 @@ Steps:
 1. Check the allowance engine dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 4. Transfers
@@ -189,7 +189,7 @@ Steps:
 1. Check the transfers dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 4.2 Transfers — topic 2
@@ -198,7 +198,7 @@ Steps:
 1. Check the transfers dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 4.3 Transfers — topic 3
@@ -207,7 +207,7 @@ Steps:
 1. Check the transfers dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 4.4 Transfers — topic 4
@@ -216,7 +216,7 @@ Steps:
 1. Check the transfers dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 4.5 Transfers — topic 5
@@ -225,7 +225,7 @@ Steps:
 1. Check the transfers dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 4.6 Transfers — topic 6
@@ -234,7 +234,7 @@ Steps:
 1. Check the transfers dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 5. Fees
@@ -247,7 +247,7 @@ Steps:
 1. Check the fees dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 5.2 Fees — topic 2
@@ -256,7 +256,7 @@ Steps:
 1. Check the fees dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 5.3 Fees — topic 3
@@ -265,7 +265,7 @@ Steps:
 1. Check the fees dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 5.4 Fees — topic 4
@@ -274,7 +274,7 @@ Steps:
 1. Check the fees dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 5.5 Fees — topic 5
@@ -283,7 +283,7 @@ Steps:
 1. Check the fees dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 5.6 Fees — topic 6
@@ -292,7 +292,7 @@ Steps:
 1. Check the fees dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 6. Admin and reporting
@@ -305,7 +305,7 @@ Steps:
 1. Check the admin and reporting dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 6.2 Admin and reporting — topic 2
@@ -314,7 +314,7 @@ Steps:
 1. Check the admin and reporting dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 6.3 Admin and reporting — topic 3
@@ -323,7 +323,7 @@ Steps:
 1. Check the admin and reporting dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 6.4 Admin and reporting — topic 4
@@ -332,7 +332,7 @@ Steps:
 1. Check the admin and reporting dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 6.5 Admin and reporting — topic 5
@@ -341,7 +341,7 @@ Steps:
 1. Check the admin and reporting dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 6.6 Admin and reporting — topic 6
@@ -350,7 +350,7 @@ Steps:
 1. Check the admin and reporting dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 7. Auth and access
@@ -363,7 +363,7 @@ Steps:
 1. Check the auth and access dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 7.2 Auth and access — topic 2
@@ -372,7 +372,7 @@ Steps:
 1. Check the auth and access dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 7.3 Auth and access — topic 3
@@ -381,7 +381,7 @@ Steps:
 1. Check the auth and access dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 7.4 Auth and access — topic 4
@@ -390,7 +390,7 @@ Steps:
 1. Check the auth and access dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 7.5 Auth and access — topic 5
@@ -399,7 +399,7 @@ Steps:
 1. Check the auth and access dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 7.6 Auth and access — topic 6
@@ -408,7 +408,7 @@ Steps:
 1. Check the auth and access dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 8. Data stores
@@ -421,7 +421,7 @@ Steps:
 1. Check the data stores dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 8.2 Data stores — topic 2
@@ -430,7 +430,7 @@ Steps:
 1. Check the data stores dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 8.3 Data stores — topic 3
@@ -439,7 +439,7 @@ Steps:
 1. Check the data stores dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 8.4 Data stores — topic 4
@@ -448,7 +448,7 @@ Steps:
 1. Check the data stores dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 8.5 Data stores — topic 5
@@ -457,7 +457,7 @@ Steps:
 1. Check the data stores dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 8.6 Data stores — topic 6
@@ -466,7 +466,7 @@ Steps:
 1. Check the data stores dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 9. Monitoring
@@ -479,7 +479,7 @@ Steps:
 1. Check the monitoring dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 9.2 Monitoring — topic 2
@@ -488,7 +488,7 @@ Steps:
 1. Check the monitoring dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 9.3 Monitoring — topic 3
@@ -497,7 +497,7 @@ Steps:
 1. Check the monitoring dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 9.4 Monitoring — topic 4
@@ -506,7 +506,7 @@ Steps:
 1. Check the monitoring dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 9.5 Monitoring — topic 5
@@ -515,7 +515,7 @@ Steps:
 1. Check the monitoring dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 9.6 Monitoring — topic 6
@@ -524,7 +524,7 @@ Steps:
 1. Check the monitoring dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 10. Incident response
@@ -537,7 +537,7 @@ Steps:
 1. Check the incident response dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 10.2 Incident response — topic 2
@@ -546,7 +546,7 @@ Steps:
 1. Check the incident response dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 10.3 Incident response — topic 3
@@ -555,7 +555,7 @@ Steps:
 1. Check the incident response dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 10.4 Incident response — topic 4
@@ -564,7 +564,7 @@ Steps:
 1. Check the incident response dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 10.5 Incident response — topic 5
@@ -573,7 +573,7 @@ Steps:
 1. Check the incident response dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 10.6 Incident response — topic 6
@@ -582,7 +582,7 @@ Steps:
 1. Check the incident response dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 11. Tax year rollover
@@ -595,7 +595,7 @@ Steps:
 1. Check the tax year rollover dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 11.2 Tax year rollover — topic 2
@@ -604,7 +604,7 @@ Steps:
 1. Check the tax year rollover dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 11.3 Tax year rollover — topic 3
@@ -613,7 +613,7 @@ Steps:
 1. Check the tax year rollover dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 11.4 Tax year rollover — topic 4
@@ -622,7 +622,7 @@ Steps:
 1. Check the tax year rollover dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 11.5 Tax year rollover — topic 5
@@ -631,7 +631,7 @@ Steps:
 1. Check the tax year rollover dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 11.6 Tax year rollover — topic 6
@@ -640,7 +640,7 @@ Steps:
 1. Check the tax year rollover dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ## 12. Regulatory
@@ -653,7 +653,7 @@ Steps:
 1. Check the regulatory dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 12.2 Regulatory — topic 2
@@ -662,7 +662,7 @@ Steps:
 1. Check the regulatory dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 12.3 Regulatory — topic 3
@@ -671,7 +671,7 @@ Steps:
 1. Check the regulatory dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 12.4 Regulatory — topic 4
@@ -680,7 +680,7 @@ Steps:
 1. Check the regulatory dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 12.5 Regulatory — topic 5
@@ -689,7 +689,7 @@ Steps:
 1. Check the regulatory dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.
 
 ### 12.6 Regulatory — topic 6
@@ -698,5 +698,5 @@ Steps:
 1. Check the regulatory dashboard for the current state.
 2. Confirm the change against the spec in specs/ before acting.
 3. Apply the change in a controlled window and record it in the audit log.
-4. Verify with `make test` and the relevant health check, then close the ticket.
+4. Verify with `uv run pytest` and the relevant health check, then close the ticket.
 Known pitfalls: stale caches, tax-year boundary effects, and partial writes on retry.

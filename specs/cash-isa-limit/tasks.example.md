@@ -7,4 +7,4 @@ _Example / fallback. One task per cleared window._
 2. Add the cash sub-limit branch to `check_contribution` in `app/isa_rules.py`.
    Check: `pytest tests/test_isa_limit.py` passes.
 3. Run the full suite and confirm nothing else broke.
-   Check: `make test` is green (after the separate /goal fee fix, if done).
+   Check: `uv run pytest` is green (after the separate /goal fee fix, if done).

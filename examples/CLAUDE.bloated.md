@@ -6,9 +6,9 @@
 FastAPI service for ISA accounts, contributions and transfers.
 
 ## Commands
-- Install: `make install`
-- Test: `make test`
-- Run: `make run`
+- Install: `uv sync`
+- Test: `uv run pytest`
+- Run: `uv run uvicorn app.main:app --reload`
 
 ## Full endpoint-authoring procedure (belongs in a skill, not here)
 When adding an endpoint: create a router in app/routes/<resource>.py with
@@ -18,7 +18,7 @@ define request bodies as Pydantic models in app/models.py with Field(gt=0) for
 money; raise HTTPException(404) for missing records and HTTPException(422) for rule
 violations with a human-readable detail; keep allowance logic in app/isa_rules.py;
 write tests/test_<resource>.py covering the happy path, the auth failure and a rule
-violation using the client and admin_headers fixtures; run make test and show output.
+violation using the client and admin_headers fixtures; run uv run pytest and show output.
 
 ## Full release procedure (belongs in a runbook)
 Cut a release branch; run the full suite; run ruff and black; update the changelog;
