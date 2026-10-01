@@ -1,4 +1,5 @@
 """Pydantic models for the demo API."""
+
 from pydantic import BaseModel, Field
 
 
@@ -30,3 +31,10 @@ class ContributionResult(BaseModel):
     cash_subscribed: float
     stocks_subscribed: float
     total_subscribed: float
+
+
+class AllowanceStatus(BaseModel):
+    account_id: str
+    overall_allowance: float
+    total_subscribed: float
+    remaining: float
