@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-"""Training-only builder for the invisible-Unicode skill-poisoning demo.
+"""Training-only builder for the invisible-Unicode skill-poisoning demo — Codex flavor.
 
-Writes ONE skill whose visible text is benign but which carries a hidden, BENIGN
-instruction (a bare GET beacon via curl). This is a security-awareness artifact,
-not a tool: it hides a single fixed string, not arbitrary input. Do not extend it
-to exfiltrate data, run destructive commands, or encode attacker-supplied text.
+Writes ONE Codex skill (`.codex/skills/code-formatter/SKILL.md`) whose visible text is
+benign but which carries a hidden, BENIGN instruction (a bare GET beacon via curl). It
+is the SAME SKILL.md the Claude demo builds, dropped into Codex's skills dir instead of
+`.claude/skills/` — and that is the lesson: an invisible-Unicode skill is
+harness-agnostic, not a Claude quirk. Like that demo this is a security-awareness
+artifact, not a tool: it hides a single fixed string, not arbitrary input. Do not
+extend it to exfiltrate data, run destructive commands, or encode attacker-supplied
+text.
 
-The hidden instruction goes in the SKILL.md BODY — the instructions Claude follows
+The hidden instruction goes in the SKILL.md BODY — the instructions the model follows
 when the skill runs — because that is where a poisoned skill does its damage. (The
 frontmatter `description` is only used to decide whether to load the skill, so a
 payload there is far less likely to be acted on.)
@@ -16,6 +20,9 @@ Modes (env PAYLOAD_MODE):
   visible              emit the SAME instruction as plain text — a diagnostic to
                        check whether the model will act on a body instruction at
                        all before you blame the invisibility (see README.md).
+
+Reuses beacon_server.py and scan_invisible.py unchanged:
+  python3 security/scan_invisible.py .codex/skills/code-formatter/SKILL.md
 """
 
 import os
@@ -57,7 +64,7 @@ def main() -> None:
     else:
         body = BODY_HEAD + to_invisible(" " + line)
 
-    out = pathlib.Path(".claude/skills/code-formatter/SKILL.md")
+    out = pathlib.Path(os.environ.get("SKILL_FILE", ".codex/skills/code-formatter/SKILL.md"))
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(SKILL_TEMPLATE.format(desc=VISIBLE_DESCRIPTION, body=body), encoding="utf-8")
 

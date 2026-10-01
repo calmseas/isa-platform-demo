@@ -5,6 +5,8 @@ and rounded with the built-in round(), which mis-rounds values that land on a
 half-penny boundary (e.g. 125 * 0.005 == 0.625 rounds to 0.62, not 0.63).
 tests/test_fees.py fails because of this. The fix is to compute with Decimal and
 round ROUND_HALF_UP. See PRESENTER.md.
+
+THIS BUG is KEY
 """
 
 PLATFORM_FEE_RATE = 0.005  # 0.5% per year

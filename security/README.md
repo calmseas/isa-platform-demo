@@ -47,9 +47,35 @@ unreviewed instruction executed. Nothing is exfiltrated and nothing destructive 
    allowlisted sources, scan for invisible/bidi characters, pin versions, and rely on
    permission rules — not on a human reading the text — as the control.
 
+## Codex variant — same skill, `.codex/skills/`
+
+The invisible-Unicode trick is not Claude-specific. `build_poisoned_codex_skill.py`
+writes the **same benign `SKILL.md`** into Codex's skills dir
+(`.codex/skills/code-formatter/SKILL.md`) instead of `.claude/skills/`. The lesson: an
+invisible-Unicode skill is harness-agnostic — the identical file that sails through a
+Claude review sails through a Codex one. Same guardrails apply — one fixed, benign
+`GET`, your endpoint, controlled room, do not escalate.
+
+    export BEACON_URL="http://localhost:9000/hit"     # a host you control
+    python3 beacon_server.py                          # in a spare terminal
+    python3 build_poisoned_codex_skill.py             # writes .codex/skills/code-formatter/SKILL.md
+    #   set SKILL_FILE=<path> to write the skill somewhere else
+
+Then invoke the code-formatter skill in Codex ("format the staged Python files"): it
+reads the hidden instruction and hits your beacon. Reveal and defend exactly as above —
+the same detector works unchanged:
+
+    python3 scan_invisible.py .codex/skills/code-formatter/SKILL.md
+
+Reset removes the generated skill (`git clean -fd`). Run the scripts with the repo venv
+(Python 3.11+); they use 3.10+ syntax.
+
 ## Files
 
-- `build_poisoned_skill.py` — writes the one benign poisoned `SKILL.md`.
+- `build_poisoned_skill.py` — writes the one benign poisoned `SKILL.md` under `.claude/skills/` (Claude Code).
+- `build_poisoned_codex_skill.py` — writes the one benign poisoned `SKILL.md` under `.codex/skills/` (Codex).
+- `beacon_server.py` — tiny local "phone home" logger for either demo.
 - `scan_invisible.py` — detector/reveal; use it in pre-commit and CI too.
 
-Drops into the demo repo as `security/` plus the generated `.claude/skills/code-formatter/`.
+Drops into the demo repo as `security/` plus the generated `code-formatter/` skill under
+`.claude/skills/` (Claude) or `.codex/skills/` (Codex).
