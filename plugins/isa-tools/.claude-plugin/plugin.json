@@ -2,5 +2,7 @@
   "name": "isa-tools",
   "version": "0.1.0",
   "description": "House conventions and reviews for the ISA platform demo: an endpoint skill, a security-review command, and a read-only reviewer agent.",
-  "author": "Frontier Practice Advisory"
+  "author": {
+    "name": "Frontier Practice Advisory"
+  }
 }

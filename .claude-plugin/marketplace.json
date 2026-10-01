@@ -1,6 +1,8 @@
 {
   "name": "isa-demo-marketplace",
-  "owner": "Frontier Practice Advisory",
+  "owner": {
+    "name": "Frontier Practice Advisory"
+  },
   "metadata": {
     "description": "Training marketplace for the Advanced Claude Code session.",
     "version": "0.1.0"
